@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 
 function Task(props) {
-  const handleClick = (e) => {
+  const [disappear, setDisappear] = useState(0);
+
+  // 消失动画
+  const handleClick = (e, HandleAnimaEnd) => {
+    setDisappear(1);
+  }
+
+  // 动画结束执行删除
+  const handleAnimaEnd = (e) => {
     props.funHook.deleteTask(props.columnId, props.task.id);
   }
 
@@ -21,13 +29,17 @@ function Task(props) {
           <div
             className={`
               column-task
+              animate__animated
+              animate__faster
               ${snapshot.isDragging ? 'task-draging' : ''}
               ${props.columnId === 'column-1' && 'task-readying'}
               ${props.columnId === 'column-2' && 'task-doing'}
               ${props.columnId === 'column-3' && 'task-complete'}
+              ${disappear === 1 && 'animate__fadeOutLeft'}
             `}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
+            onAnimationEnd={handleAnimaEnd}
             ref={provided.innerRef}
           >
             <div

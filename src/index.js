@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
+import 'animate.css';
 import './index.scss';
 import initialData from './initial-data';
 import Column from './components/column';
