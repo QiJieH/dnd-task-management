@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  column-gap: 16px;
+  color: #0f172a;
+}
+
+.column-box {
+  width: 280px;
+  height: auto;
+  margin: 8px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  .column-title {
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid lightgrey;
+    background-color: #f1f5f9;
+  }
+  .column-stack {
+    padding: 12px;
+    flex-grow: 1;
+    min-height: 50px;
+    border: 1px solid lightgrey;
+    border-top: 0;
+    .add-btn {
+      background-color: #cbd5e1;
+      text-align: center;
+      color: #334155;
+      font-size: 1.8rem;
+      cursor: pointer;
+      transition: background-color .3s ease;
+      &:hover {
+        background-color: #94a3b8;
+      }
+    }
+    .column-task {
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      justify-content: space-between;
+      border: 1px solid lightgray;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      background-color: #f8fafc;
+      .drag-handle {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        background-color: #cbd5e1;
+      }
+      .task-input {
+        flex: 3;
+        text-overflow:ellipsis;
+        padding: 16px 0;
+        border: none;
+        outline: none;
+        background-color: inherit;
+      }
+      &:hover .delete-mark{
+        visibility: visible;
+      }
+      .delete-mark {
+        flex: 1;
+        visibility: hidden;
+        font-size: 1.7rem;
+        color: #94a3b8;
+        cursor: pointer;
+        &:hover {
+          color: #ef4444;
+        }
+      }
+    }
+    .task-draging {
+      background-color: #cbd5e1;
+    }
+    .task-readying {
+      .drag-handle {
+        background-color: #fecaca;
+      }
+    }
+    .task-doing {
+      .drag-handle {
+        background-color: #fde68a;
+      }
+    }
+    .task-complete {
+      background-color: #e2e8f0;
+      .drag-handle {
+        background-color: #a7f3d0;
+      }
+      input {
+        color: #94a3b8;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .column-hover {
+    border: 1px solid #3b82f6;
+  }
+}
