@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/dnd-task-management/static/css/main.d8bfa136.css",
-    "main.js": "/dnd-task-management/static/js/main.9c2105b9.js",
-    "index.html": "/dnd-task-management/index.html",
-    "main.d8bfa136.css.map": "/dnd-task-management/static/css/main.d8bfa136.css.map",
-    "main.9c2105b9.js.map": "/dnd-task-management/static/js/main.9c2105b9.js.map"
+    "main.css": "/static/css/main.d8bfa136.css",
+    "main.js": "/static/js/main.9c2105b9.js",
+    "index.html": "/index.html",
+    "main.d8bfa136.css.map": "/static/css/main.d8bfa136.css.map",
+    "main.9c2105b9.js.map": "/static/js/main.9c2105b9.js.map"
   },
   "entrypoints": [
     "static/css/main.d8bfa136.css",
