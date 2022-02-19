@@ -2,7 +2,7 @@
 
 欢迎使用可拖拽的任务管理器应用。
 
-这是一个基于react和令人惊叹的react-bereact-beautiful可拖拽库构建的网页程序。
+这是一个基于react和令人惊叹的react-beautiful-dnd可拖拽库构建的网页程序。
 
 ## 在线演示 :ocean:
 
