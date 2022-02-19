@@ -8,7 +8,7 @@ import 'normalize.css'
 
 const rootElement = document.getElementById('root');
 render(
-  <BrowserRouter>
+  <BrowserRouter basename='/dnd-task-management'>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="task" element={<DnD />} />
