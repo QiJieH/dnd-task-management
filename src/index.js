@@ -11,7 +11,7 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="dnd-task-management" element={<DnD />} />
+      <Route path="task" element={<DnD />} />
     </Routes>
   </BrowserRouter>,
   rootElement
