@@ -8,7 +8,9 @@
 
 你可以访问下面的链接查看应用演示：
 
-https://qijieh.github.io/dnd-task-management/
+<a href="https://qijieh.github.io/dnd-task-management/" target="_blank">
+  <p>https://qijieh.github.io/dnd-task-management/</p>
+</a>
 
 ## 本地部署 :whale:
 
